@@ -1,0 +1,10 @@
+
+.Ipod{
+  display: flex;
+  position: relative;
+  background-color: lightgray;
+  min-height: 50px;
+  min-width: 50px;
+  top: 50px;
+  left: 50px;
+}

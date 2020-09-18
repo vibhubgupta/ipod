@@ -1,6 +1,9 @@
-import { render } from '@testing-library/react';
-import React from 'react';
+import React from "react";
 import './App.css';
+import Ipod from "./Ipod.js";
+
+
+// import * as firebase from "firebase";
 
 // function App() 
 class App extends React.Component {
@@ -9,26 +12,17 @@ class App extends React.Component {
     super();
     this.state = {
       songs: [],
-      loading: true
     };
-    this.db = firebase.firestore();
+    // this.db = firebase.firestore();
   }
-
-
 
   render() {
     return (
       <div className="App">
-        <div className='ipod-container'>
-          <div className='ipod-screem'>
-            <div className='ipod-menu'>
-              
-            </div>
-          </div>
-          <div className='ipod-buttons'>
+        <h1>Ipod</h1>
+        <Ipod
 
-          </div>
-        </div>
+        />
       </div>
     );
   }
