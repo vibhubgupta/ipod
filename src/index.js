@@ -2,16 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+import * as firebase from 'firebase';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// Your web app's Firebase configuration
+var firebaseConfig = {
+  apiKey: "AIzaSyAFEMoVg-IAQ3RSgbgg7WDiT9AIHbZEfPw",
+  authDomain: "ipod-eba36.firebaseapp.com",
+  databaseURL: "https://ipod-eba36.firebaseio.com",
+  projectId: "ipod-eba36",
+  storageBucket: "ipod-eba36.appspot.com",
+  messagingSenderId: "1003957937173",
+  appId: "1:1003957937173:web:ceee8ae6375fbec1fd9a1c"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render( <React.StrictMode><App /></React.StrictMode>, document.getElementById('root') );

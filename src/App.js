@@ -1,26 +1,38 @@
+import { render } from '@testing-library/react';
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// function App() 
+class App extends React.Component {
+  
+  constructor() {
+    super();
+    this.state = {
+      songs: [],
+      loading: true
+    };
+    this.db = firebase.firestore();
+  }
+
+
+
+  render() {
+    return (
+      <div className="App">
+        <div className='ipod-container'>
+          <div className='ipod-screem'>
+            <div className='ipod-menu'>
+              
+            </div>
+          </div>
+          <div className='ipod-buttons'>
+
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
+
 
 export default App;
