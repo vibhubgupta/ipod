@@ -1,0 +1,40 @@
+.parent-touch-area{
+    position: relative;
+    margin: 4.5%;
+    width: 90%;
+    height: 90%;
+}
+.touch-area{
+    position: relative;
+    top: 4.5%;
+    margin: 4.5%;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.touch-area>div{
+    margin: 0;
+    width: 33%;
+    height: 33%;
+    background-color: lightgray;
+}
+.touch-div-11{
+border-top-left-radius: 100%;
+}
+.touch-div-13{
+    border-top-right-radius: 100%;
+}
+.touch-div-31{
+    border-bottom-left-radius: 100%;
+}
+.touch-div-33{
+    border-bottom-right-radius: 100%;
+}
+.touch-div-22{
+    height: 40%;
+    width: 40%;
+    border-radius: 50%;
+    background-color: grey !important;
+}

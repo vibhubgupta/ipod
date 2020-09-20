@@ -19,7 +19,6 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>Ipod</h1>
         <Ipod
 
         />
