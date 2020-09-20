@@ -26,12 +26,12 @@
 }
 .ipodDisplay{
   margin-top: 5%;
-  background-image: url(https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+  background-color: rgb(155, 153, 153);
   border-top-left-radius: 10%;
   border-top-right-radius: 10%;
 }
 .ipodController{
-  background-color: grey ;
+  background-color: rgb(155, 153, 153);
   border-bottom-left-radius: 10%;
   border-bottom-right-radius: 10%;
 }

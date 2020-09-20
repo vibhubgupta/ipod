@@ -5,7 +5,9 @@ const IpodDisplay = (props) => {
     const {temp} = props;
     return (
         <div className='ipodDisplay'>
-            
+            <div className='ipod-screen'>
+
+            </div>
         </div>
     )
 }

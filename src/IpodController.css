@@ -35,6 +35,5 @@ border-top-left-radius: 100%;
 .touch-div-22{
     height: 40%;
     width: 40%;
-    border-radius: 50%;
-    background-color: grey !important;
+    background-color: rgb(175, 171, 171) !important;
 }
