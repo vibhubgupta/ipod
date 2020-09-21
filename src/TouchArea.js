@@ -2,34 +2,14 @@ import React from 'react';
 import { useState, useEffect } from "react";
 
 class TouchArea extends React.Component {
-    constructor() {
-      super();
-      this.state = {
-        message: "mouse event"
-      }
-    }
-    
-    const useMousePosition = () => {
-        const [mousePosition, setMousePosition] = useState({ x: null, y: null });
-      
-        const updateMousePosition = ev => {
-          setMousePosition({ x: ev.clientX, y: ev.clientY });
-        };
-      
-        useEffect(() => {
-          window.addEventListener("mousemove", updateMousePosition);
-      
-          return () => window.removeEventListener("mousemove", updateMousePosition);
-        }, []);
-      
-        return mousePosition;
-    };
 
+    
+//onClick={this.props.openMenuHandler()}
     render() {
       return (
         <div onMouseOver={ this.handleEvent } className="touch-area">
             <div className='touch-div-11' >
-                { this.state.message }
+                {/* { this.state.message } */}
             </div>
             <div className='touch-div-12'>
 
@@ -40,7 +20,7 @@ class TouchArea extends React.Component {
             <div className='touch-div-21'>
 
             </div>
-            <div className='touch-div-22'>
+            <div className='touch-div-22' onClick={this.props.openMenuHandler()}>
                 
             </div>
             <div className='touch-div-23'>
