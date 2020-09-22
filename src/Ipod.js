@@ -6,24 +6,23 @@ class Ipod extends React.Component {
     constructor() {
         super();
         this.state = {
-            menudisplay: "false",
+            menuvisible: false,
         }
     }
     changeMainMenuHandler = () => {
-        
-        this.setState(() => {
-            this.state.menudisplay= "true"
-        });  
+        this.setState(state => ({
+            menuvisible: !state.menuvisible,
+        }));
     }
 
 
 
     render () {
-        console.log("render", this.state);
+        console.log(this.state);
         return (
             <div className='ipod'>
                 <IpodDisplay
-
+                    menuvisible={this.menuvisible}
                 />
                 <IpodController
                     openMenuHandler={this.changeMainMenuHandler}

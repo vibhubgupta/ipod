@@ -1,12 +1,59 @@
-.IpodDisplay{
-
+.speaker{
+    position: relative;
+    left: 43.7%;
+    top: -2%;
+    height: 1.5em;
+    width: 2.4em;
+    filter: invert(0.1);
+}
+.ipod-navbar{
+    color: white;
+    margin-top: 0%;
+    margin-left: 5%;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    font-size: 0.9em;
+    height: 6%;
+    width: 86.4%;
+    background-color: rgb(71, 69, 69);
+    border: 4px rgb(112, 104, 104) solid;
+    border-bottom: 0px;
+}
+.ipod-navbar span{
+    margin-right: 5%;
+}
+.ipod-navbar span img{
+    padding-top: 2px;
+    height: 1em;
+    width: 1em;
+    filter: brightness(0) invert(1);
+}
+.carrier{
+    padding-left: 1%;
+}
+.wifi{
+    position: relative;
+    top: 5%;
+    left: -2%;
+}
+.time{
+    position: relative;
+    left: 4%;
+    bottom: 1%;
+}
+.battery{
+    position: relative;
+    left: 23%;
+    top: 5%;
 }
 .ipod-screen{
-    margin-top: 6%;
+    
     margin-left: 5%;
-    width: 90%;
-    height: 89%;
-    border-radius: 4%;
+    width: 87%;
+    height: 82%;
+    border-bottom-left-radius: 4%;
+    border-bottom-right-radius: 4%;
     background-image: url("https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
     border: 4px rgb(112, 104, 104) solid;
+    border-top: 0px;
 }

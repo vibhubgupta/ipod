@@ -22,15 +22,17 @@
 .ipod>div{
   margin-left: 25%;
   width: 50%;
-  height: 45%;
+
 }
 .ipodDisplay{
-  margin-top: 5%;
+  margin-top: 2.5%;
+  height: 55%;
   background-color: rgb(155, 153, 153);
   border-top-left-radius: 10%;
   border-top-right-radius: 10%;
 }
 .ipodController{
+  height: 40%;
   background-color: rgb(155, 153, 153);
   border-bottom-left-radius: 10%;
   border-bottom-right-radius: 10%;

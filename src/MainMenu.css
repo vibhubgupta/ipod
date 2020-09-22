@@ -1,12 +1,17 @@
 .main-menu{
-    /* display: none; */
+    display: none;
     padding-top: 10%;
     width: 50%;
-    height: 88%;
+    height: 89.4%;
     background-color: rgb(231, 226, 226);
-    border-top-left-radius: 4%;
-    border-bottom-left-radius: 5%;
+    border-bottom-left-radius: 4%;
+    border-top: 1px rgb(77, 70, 70) solid ;
     border-right: 3px rgb(77, 70, 70) solid;
+}
+.main-menu h3{
+    padding-left: 20%;
+    font-size: 1.5em;
+    margin-top: 1%;
 }
 .main-menu ul{
     padding-left: 0%;

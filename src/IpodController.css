@@ -24,6 +24,15 @@
 .touch-div-11{
 border-top-left-radius: 100%;
 }
+.touch-div-12 span{
+    position: relative;
+    top: 27%;
+    left: 11.5%;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: black;
+    filter: invert(0.4);
+}
 .touch-div-13{
     border-top-right-radius: 100%;
 }
@@ -33,8 +42,46 @@ border-top-left-radius: 100%;
 .touch-div-33{
     border-bottom-right-radius: 100%;
 }
+.touch-div-21{
+    height: 35% !important;
+}
+.touch-div-21 img{
+    position: relative;
+    top: 18%;
+    left: 23%;
+    width: 2em;
+    height: 2em;
+    filter: invert(0.5);
+}
 .touch-div-22{
-    height: 40%;
-    width: 40%;
+    height: 35% !important;
+    width: 33% !important;
     background-color: rgb(175, 171, 171) !important;
+}
+.touch-div-22 img{
+    position: relative;
+    top: 5%;
+    left: 6%;
+    width: 3.6em;
+    height: 3.1em;
+    filter: invert(0.5);
+}
+.touch-div-23{
+    height: 35% !important;
+}
+.touch-div-23 img{
+    position: relative;
+    top: 18%;
+    left: 23%;
+    width: 2em;
+    height: 2em;
+    filter: invert(0.5);
+}
+.touch-div-32 img{
+    position: relative;
+    top: 20%;
+    left: 27%;
+    width: 2em;
+    height: 2em;
+    filter: invert(0.5);
 }
