@@ -22,7 +22,7 @@ class Ipod extends React.Component {
         return (
             <div className='ipod'>
                 <IpodDisplay
-                    menuvisible={this.menuvisible}
+                    menuvisible={this.state.menuvisible}
                 />
                 <IpodController
                     openMenuHandler={this.changeMainMenuHandler}

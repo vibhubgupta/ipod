@@ -1,17 +1,15 @@
 import React from 'react';
+import "./TouchArea.css"
 
 class TouchArea extends React.Component {
 
-
-    
-//onClick={this.props.openMenuHandler()}
     render() {
       return (
         <div onMouseOver={ this.handleEvent } className="touch-area">
             <div className='touch-div-11' >
                 {/* { this.state.message } */}
             </div>
-            <div className='touch-div-12'>
+            <div className='touch-div-12' onClick={this.props.openMenuHandler}>
               <span>MENU</span>
             </div>
             <div className='touch-div-13'>
@@ -20,7 +18,7 @@ class TouchArea extends React.Component {
             <div className='touch-div-21'>
               <img alt="" src="https://www.flaticon.com/svg/static/icons/svg/854/854183.svg"></img>
             </div>
-            <div className='touch-div-22' onClick={this.props.openMenuHandler}>
+            <div className='touch-div-22'>
                 <img alt="" src="https://www.flaticon.com/svg/static/icons/svg/545/545666.svg"></img>
             </div>
             <div className='touch-div-23'>
