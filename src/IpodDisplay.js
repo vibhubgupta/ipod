@@ -2,8 +2,7 @@ import React from 'react';
 import "./IpodDisplay.css";
 import MainMenu from "./MainMenu";
 
-const IpodDisplay = ({menuvisible}) => {
-    
+const IpodDisplay = (props) => {
     return (
         <div className='ipodDisplay'>
             <div className="speaker">
@@ -17,8 +16,20 @@ const IpodDisplay = ({menuvisible}) => {
             </div>
             <div className='ipod-screen'>
                 <MainMenu
-                    menuvisible={menuvisible}
+                    menuvisible={props.menuvisible}
+                    firstvisible={props.firstvisible}
+                    secondvisible={props.secondvisible}
+                    thirdvisible={props.thirdvisible}
                 />
+                <div style={{display: props.songvisible ? "block" : "none"} } className="songs-screen">
+                    <h3>Songs</h3>
+                </div>
+                <div style={{display: props.gamevisible ? "block" : "none"} } className="games-screen">
+                    <h3>Games</h3>
+                </div>
+                <div style={{display: props.settingvisible ? "block" : "none"} } className="setting-screen">
+                    <h3>Settings</h3>
+                </div>
             </div>
         </div>
     )

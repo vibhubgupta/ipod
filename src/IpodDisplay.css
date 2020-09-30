@@ -15,8 +15,8 @@
     font-size: 0.9em;
     height: 6%;
     width: 86.4%;
-    background-color: rgb(71, 69, 69);
-    border: 4px rgb(112, 104, 104) solid;
+    background-color: rgb(102, 80, 80);
+    border: 4px rgb(85, 42, 42) solid;
     border-bottom: 0px;
 }
 .ipod-navbar span{
@@ -29,22 +29,24 @@
     filter: brightness(0) invert(1);
 }
 .carrier{
+    float: left;
     padding-left: 1%;
 }
 .wifi{
     position: relative;
-    top: 5%;
-    left: -2%;
+    float: left;
+    top: 10%;
 }
 .time{
     position: relative;
-    left: 4%;
-    bottom: 1%;
+    float: middle;
+    left: 10%;
+    top: 1%;
 }
 .battery{
     position: relative;
-    left: 23%;
-    top: 5%;
+    float: right;
+    top: 10%;
 }
 .ipod-screen{
     
@@ -54,6 +56,40 @@
     border-bottom-left-radius: 4%;
     border-bottom-right-radius: 4%;
     background-image: url("https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
-    border: 4px rgb(112, 104, 104) solid;
+    border: 4px rgb(85, 42, 42) solid;
     border-top: 0px;
+}
+.song-screen{
+    background-image: url("https://images.unsplash.com/photo-1596270895845-8866e6b8f7ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    display: none;
+    position: relative;
+    top: 0;
+    height: 90%;
+}
+.song-screen>h3{
+    margin: 0;
+    position: relative;
+    top: 15%;
+    left: 32%;
+    font-size: 2em;
+    color: rgb(252, 252, 252);
+}
+.games-screen{
+    background-image: url("https://images.unsplash.com/photo-1596270895845-8866e6b8f7ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    display: none;
+    position: relative;
+    top: 0;
+    height: 90%;
+    
+}
+.games-screen>h3{
+    margin: 0;
+    position: relative;
+    top: 15%;
+    left: 32%;
+    font-size: 2em;
+    color: rgb(252, 252, 252);
+
 }

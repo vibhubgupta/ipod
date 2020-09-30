@@ -2,7 +2,6 @@ import React from "react";
 import './App.css';
 import Ipod from "./Ipod.js";
 
-
 // import * as firebase from "firebase";
 
 // function App() 

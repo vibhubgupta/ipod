@@ -23,65 +23,80 @@
 }
 .touch-div-11{
 border-top-left-radius: 100%;
+border-top: 1px white solid;
+border-left: 1px white solid;
+}
+.touch-div-12{
+    border-top: 1px white solid;
 }
 .touch-div-12 span{
     position: relative;
     top: 27%;
-    left: 11.5%;
-    font-size: 1.1em;
+    left: 8%;
+    font-size: 150%;
     font-weight: 500;
     color: black;
-    filter: invert(0.4);
+    filter: invert(0.5);
 }
 .touch-div-13{
+    border-top: 1px white solid;
+    border-right: 1px white solid;
     border-top-right-radius: 100%;
 }
 .touch-div-31{
     border-bottom-left-radius: 100%;
+    border-left: 1px white solid;
+    border-bottom: 1px white solid;
 }
 .touch-div-33{
     border-bottom-right-radius: 100%;
+    border-right: 1px white solid;
+    border-bottom: 1px white solid;
 }
 .touch-div-21{
     height: 35% !important;
+    border-left: 1px white solid;
 }
 .touch-div-21 img{
     position: relative;
     top: 18%;
-    left: 23%;
-    width: 2em;
-    height: 2em;
+    left: 25%;
+    width: 60%;
+    height: 60%;
     filter: invert(0.5);
 }
 .touch-div-22{
     height: 35% !important;
     width: 33% !important;
-    background-color: rgb(175, 171, 171) !important;
 }
 .touch-div-22 img{
     position: relative;
-    top: 5%;
-    left: 6%;
-    width: 3.6em;
-    height: 3.1em;
-    filter: invert(0.5);
+    top: 1%;
+    left: 1%;
+    width: 98%;
+    height: 98%;
+    filter: invert(0.3);
 }
 .touch-div-23{
     height: 35% !important;
+    border-right: 1px white solid;
 }
 .touch-div-23 img{
     position: relative;
     top: 18%;
-    left: 23%;
-    width: 2em;
-    height: 2em;
+    left: 15%;
+    width: 60%;
+    height: 60%;
     filter: invert(0.5);
+}
+.touch-div-32{
+    border-bottom: 1px white solid;
 }
 .touch-div-32 img{
     position: relative;
     top: 20%;
-    left: 27%;
-    width: 2em;
-    height: 2em;
+    left: 21%;
+    width: 60%;
+    height: 60%;
     filter: invert(0.5);
 }

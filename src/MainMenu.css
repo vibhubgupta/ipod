@@ -1,5 +1,6 @@
 .main-menu{
     display: none;
+    z-index: 20;
     padding-top: 10%;
     width: 65%;
     height: 89.4%;
@@ -36,7 +37,7 @@
 }
 .arrow1{
     position: relative;
-    left: 10%;
+    left: 30%;
 }
 .arrow2 {
     position: relative;
