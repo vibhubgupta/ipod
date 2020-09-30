@@ -15,13 +15,16 @@ const IpodDisplay = (props) => {
                 <span className="battery"> <img alt="" src="https://www.flaticon.com/svg/static/icons/svg/569/569467.svg"></img> </span>
             </div>
             <div className='ipod-screen'>
+                <div style={{display: props.menuvisible ? "none" : "block"} } className="main-screen-heading">
+                    <h2>REACT PROJECT</h2>
+                </div>
                 <MainMenu
                     menuvisible={props.menuvisible}
                     firstvisible={props.firstvisible}
                     secondvisible={props.secondvisible}
                     thirdvisible={props.thirdvisible}
                 />
-                <div style={{display: props.songvisible ? "block" : "none"} } className="songs-screen">
+                <div style={{display: props.songvisible ? "block" : "none"} } className="song-screen">
                     <h3>Songs</h3>
                 </div>
                 <div style={{display: props.gamevisible ? "block" : "none"} } className="games-screen">

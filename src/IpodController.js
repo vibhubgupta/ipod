@@ -10,7 +10,7 @@ const IpodController = (props) => {
             <div className='parent-touch-area'>
                 <TouchArea
                     openMenuHandler={props.openMenuHandler}
-                    openSongHandler={props.openSonghandler}
+                    openSongHandler={props.openSongHandler}
                     openGameHandler={props.openGameHandler}
                     openSettingHandler={props.openSettingHandler}
                     shiftClickUp={props.shiftClickUp}

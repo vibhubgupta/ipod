@@ -1,5 +1,7 @@
 .main-menu{
     display: none;
+    position: relative;
+    top: 0;
     z-index: 20;
     padding-top: 10%;
     width: 65%;

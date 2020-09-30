@@ -2,7 +2,11 @@ import React from 'react';
 import "./TouchArea.css"
 
 class TouchArea extends React.Component {
-
+    onclickfunction = () => {
+      this.props.openSongHandler()
+      this.props.openGameHandler()
+      this.props.openSettingHandler()
+    }
     render() {
       return (
         <div onMouseOver={ this.handleEvent } className="touch-area">
@@ -18,17 +22,7 @@ class TouchArea extends React.Component {
             <div className='touch-div-21' onClick={this.props.shiftClickUp}>
               <img alt="" src="https://www.flaticon.com/svg/static/icons/svg/854/854183.svg"></img>
             </div>
-            <div
-                className='touch-div-22'
-                onClick={() => {
-                  this.props.openSongHandler()
-                }} 
-                onClick={() => {
-                  this.props.openGameHandler()
-                }}
-                onClick={() => {
-                  this.props.openSettingHandler()
-                }}>
+            <div className='touch-div-22' onClick={this.onclickfunction}>
                 <img alt="" src="https://www.flaticon.com/svg/static/icons/svg/545/545666.svg"></img>
             </div>
             <div className='touch-div-23' onClick={this.props.shiftClickDown}>

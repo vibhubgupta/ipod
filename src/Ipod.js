@@ -16,10 +16,20 @@ class Ipod extends React.Component {
         }
     }
     changeMainMenuHandler = (state) => {
-        if(!this.state.menuvisible && this.state.gamevisible){
+        if(!this.state.menuvisible && this.state.songvisible){
+            this.setState(state => ({
+                menuvisible: !state.menuvisible,
+                songvisible: !state.songvisible,
+            }));
+        } else if(!this.state.menuvisible && this.state.gamevisible){
             this.setState(state => ({
                 menuvisible: !state.menuvisible,
                 gamevisible: !state.gamevisible,
+            }));
+        } else if(!this.state.menuvisible && this.state.settingvisible){
+            this.setState(state => ({
+                menuvisible: !state.menuvisible,
+                settingvisible: !state.settingvisible,
             }));
         } else{
             this.setState(state => ({
@@ -27,7 +37,18 @@ class Ipod extends React.Component {
             }));
         }
     }
+    changeMusicHandler = (state) => {
+        console.log("music opened");
+        if(this.state.firstvisible && this.state.menuvisible && !this.state.songvisible){
+            this.setState(state => ({
+                menuvisible: !state.menuvisible,
+                songvisible: !state.songvisible,
+            }));
+        }
+        console.log(this.state.songvisible);
+    }
     changeGameHandler = (state) => {
+        console.log("game opened");
         if(this.state.secondvisible && this.state.menuvisible && !this.state.gamevisible){
             this.setState(state => ({
                 menuvisible: !state.menuvisible,
@@ -37,16 +58,8 @@ class Ipod extends React.Component {
         }
         console.log(this.state.gamevisible);
     }
-    changeMusicHandler = (state) => {
-        if(this.state.firstvisible && this.state.menuvisible && !this.state.songvisible){
-            this.setState(state => ({
-                menuvisible: !state.menuvisible,
-                songvisible: !state.songvisible,
-            }));
-        }
-        console.log(this.state.songvisible);
-    }
     changeSettingHandler = (state) => {
+        console.log("setting opened");
         if(this.state.thirdvisible && this.state.menuvisible && !this.state.settingvisible){
             this.setState(state => ({
                 menuvisible: !state.menuvisible,
